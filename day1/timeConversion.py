@@ -13,11 +13,11 @@ import sys
 # The function accepts STRING s as parameter.
 #
 
-def timeConversion(s) -> str:
+def timeConversion(s) -> str: #// Complexity: O(1)
     
-    period = s[-2:]
-    hour = s[:2]
-    rest = s[2:-2]
+    period = s[-2:] # O(1)
+    hour = s[:2] # O(1)
+    rest = s[2:-2] # O(1)
 
     if period == "AM":
         if hour == "12":

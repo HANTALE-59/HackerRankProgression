@@ -7,9 +7,9 @@ import sys
 
 
 
-def miniMaxSum(arr) -> str:
-    arr.sort()
-    return (f'{sum(arr[:4])} {sum(arr[-4:])}')
+def miniMaxSum(arr) -> str: #Complexity: O(n log(n))
+    arr.sort() #O(n log(n)) askip
+    return (f'{sum(arr[:4])} {sum(arr[-4:])}') #O(1)
 
 
 
