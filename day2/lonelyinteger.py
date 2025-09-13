@@ -19,7 +19,15 @@ def lonelyinteger(a): #// Complexity: O(n²)
         occurence = a.count(e)
         if occurence == 1:
             return e
-
+            
+def lonelyinteger_beter(a): # O (n + n)
+    counts = {}
+    for e in a:                  # O(n)
+        counts[e] = counts.get(e, 0) + 1
+    for e, c in counts.items():   # O(n)
+        if c == 1:
+            return e
+            
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
