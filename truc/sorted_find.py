@@ -1,5 +1,5 @@
 #from soc
-
+import random
 
 sorted_list1 = [1,3,5,6,7,9,10,20,30]
 sorted_list2 = [1,3,7,9,10,20,30]
@@ -29,6 +29,8 @@ def find_match(sorted_list:list,element:int) -> bool:
         
 
 
-print(find_match(sorted_list=sorted_list1,element=5))
-print(find_match(sorted_list=sorted_list2,element=8))
-print(find_match(sorted_list=sorted_list3,element=31))
+#print(find_match(sorted_list=sorted_list1,element=5))
+#print(find_match(sorted_list=sorted_list2,element=8))
+#print(find_match(sorted_list=sorted_list3,element=31))
+
+#print(power(4, 4))
