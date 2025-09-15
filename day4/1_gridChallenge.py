@@ -13,14 +13,14 @@ import sys
 # The function accepts STRING_ARRAY grid as parameter.
 #
 
-def gridChallenge(grid):
-    grid = ["".join(sorted(row)) for row in grid]
+def gridChallenge(grid): #//Complexity: O(n^2 log(n))
+    grid = ["".join(sorted(row)) for row in grid]#O(n log(n))
     #for e in grid:
     #    e.sort()
     length_grid = len(grid)
     length_row = len(grid[0])
     for i in range(0,length_row):
-        for y in range(length_grid-1,0,-1):
+        for y in range(length_grid-1,0,-1):  #n -> parce que balaye chaque élément au final dans la double boucle
             if grid[y][i] < grid[y-1][i]:
                 return "NO"
     return "YES"
