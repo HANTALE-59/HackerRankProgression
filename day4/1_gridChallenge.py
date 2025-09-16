@@ -14,7 +14,7 @@ import sys
 #
 
 def gridChallenge(grid): #//Complexity: O(n^2 log(n))
-    grid = ["".join(sorted(row)) for row in grid]#O(n log(n))
+    grid = ["".join(sorted(row)) for row in grid] # Je pense que c'est plutot O(n * log(n) + n). Tu fais le sorting une seule fois
     #for e in grid:
     #    e.sort()
     length_grid = len(grid)
